@@ -197,12 +197,20 @@ td {
 .folder-name{
   text-align: left;
 }
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 885px) {
   .search-box {
     width: 10em;
   }
   .s {
     margin-left: 5em;
+  }
+  .box{
+    width: 15em;
+  }
+}
+@media screen and (max-width: 785px) {
+  .box{
+    width: 12em;
   }
 }
 @media screen and (max-width: 542px) {

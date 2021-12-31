@@ -1,0 +1,18 @@
+@media screen and (max-width: 850px){
+    .search-box{
+        width: 10em;
+    }
+    .s{
+        margin-left: 5em;
+    }
+}
+@media screen and (max-width: 542px){
+.header{
+    width: 150vw;
+}
+}
+@media screen and (max-width: 342px){
+    .header{
+        width: 200vw;
+    }
+    }

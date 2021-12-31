@@ -213,14 +213,21 @@ td {
     width: 12em;
   }
 }
+
+
 @media screen and (max-width: 542px) {
   .header {
     width: 150vw;
   }
 }
-@media screen and (max-width: 342px) {
+@media screen and (max-width: 420px) {
   .header {
     width: 200vw;
+  }
+}
+@media screen and (max-width: 342px) {
+  .header {
+    width: 250vw;
   }
 }
 @media screen and (max-width: 262px) {

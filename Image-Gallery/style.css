@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #ecf4fb;
+}
+h1 {
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 50px;
+  color: #313131;
+  letter-spacing: 10px;
+}
+.grid-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  height: 80vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+.imgdiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+.grid-gallery img {
+  width: 50%;
+  margin-top: 10%;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgb(116, 115, 115);
+}
+.grid-gallery img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 100px rgb(150, 150, 150);
+  transition: all 0.5s ease;
+}
+.fullscreen {
+  position: absolute;
+  z-index: 900;
+  top: 0;
+  left: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.fullscreen span {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 5%;
+  right: 5%;
+  font-size: 40px;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  color: white;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+.fullscreen img {
+  border-radius: 10px;
+}
+.fullscreen img:hover {
+  box-shadow: 0 0 100px rgb(189, 188, 188);
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
+.fullscreen span:hover {
+  transform: scale(1.5);
+  box-shadow: 0 0 100px white;
+  transform: rotate(360deg);
+  transition: all 0.5s ease;
+  background-color: rgba(151, 41, 41, 0.733);
+}
+@media screen and (max-width: 1000px) {
+  h1 {
+    font-size: 40px;
+    letter-spacing: 5px;
+  }
+  .fullscreen img {
+    width: 60%;
+  }
+  .fullscreen span {
+    width: 1em;
+    height: 1em;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 30px;
+    letter-spacing: 4px;
+  }
+}
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 30px;
+    letter-spacing: 3px;
+  }
+}
+@media screen and (max-width: 300px) {
+  h1 {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+}

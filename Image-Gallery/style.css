@@ -39,7 +39,7 @@ h1 {
   transition: all 0.5s ease;
 }
 .fullscreen {
-  position: absolute;
+  position: fixed;
   z-index: 900;
   top: 0;
   left: 0;

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prime number is present in that array or not.</title>
+</head>
+<style>
+    body {
+        display: flex;
+        width: 95vw;
+        height: 95vh;
+        color:black;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        font-size: 50px;
+    }
+</style>
+<body>
+    <h1>To check Prime Number array</h1>
+    <script>
+      Array.prototype.contains = function () {
+        for(let i = 0; i < this.length; i++) {
+        if (this[i] <= 1) { 
+            return false;
+        } else {
+            for (var j = 2; j < this[i]; j++) {
+                if (this[i] % j === 0) {
+                    return false; 
+                }
+            }
+            return true;
+        }  
+    }
+}
+const arr = [2, 10, 5];
+let s = arr.contains();
+document.write("Array is"+arr)
+if(s){
+    document.write("\n Prime Number Present")
+    console.log("Prime Number Present")
+}
+else{
+    document.write(s) ; 
+    console.log("Prime Number Not Present")
+}
+   
+    </script>
+</body>
+</html>

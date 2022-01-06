@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Screen Unlock - Kushagra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        
+
+        <div class="box">
+            
+            <div class="passcode">
+                <h1>Enter Passcode</h1>
+                <span>(correct pin: 1234)</span>
+                <div class="input-group mb-3">
+                    <input class="pin" id="pin1" type="text" maxlength="1">
+                    <input class="pin" id="pin2" type="text" maxlength="1">
+                    <input class="pin" id="pin3" type="text" maxlength="1">
+                    <input class="pin" id="pin4" type="text" maxlength="1">
+                </div>
+                <h5 id="error_msg" class="text-danger"></h5>
+                <h5 id="success_msg" class="text-success"></h5>
+            </div>
+
+            <div class="keypad">
+                <div>
+                    <button class="keys" onclick="press_pin('1')">1</button>
+                    <button class="keys" onclick="press_pin('2')">2</button>
+                    <button class="keys" onclick="press_pin('3')">3</button>
+                </div>
+                <div>
+                    <button class="keys" onclick="press_pin('4')">4</button>
+                    <button class="keys" onclick="press_pin('5')">5</button>
+                    <button class="keys" onclick="press_pin('6')">6</button>
+                </div>
+                <div>
+                    <button class="keys" onclick="press_pin('7')">7</button>
+                    <button class="keys" onclick="press_pin('8')">8</button>
+                    <button class="keys" onclick="press_pin('9')">9</button>
+                </div>
+                <div>
+                    <button class="keys" onclick="clear_pin()">Del</button>
+                    <button class="keys" onclick="press_pin('0')">0</button>
+                    <button class="keys" onclick="enter_pin()">✔️</button>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+    <script src="pincode.js"></script>
+
+</body>
+
+</html>

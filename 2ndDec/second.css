@@ -28,9 +28,13 @@ body {
     height: 97vh;
 }
 .text-danger{
+    margin: 0;
+    padding: 0;
     color:red
 }
 .text-success{
+    margin: 0;
+    padding: 0;
     color: greenyellow;
 }
 .box{

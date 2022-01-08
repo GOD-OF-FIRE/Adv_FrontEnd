@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  overflow: hidden;
 }
 h2{
     margin: 0;
@@ -23,14 +24,23 @@ linear-gradient(216deg, #e3d7bf 7.5%, transparent 7.5%) -20px 73px,
 linear-gradient(144deg, #e3d7bf 7.5%, transparent 7.5%) 80px 73px;
 background-color: #232927;
 background-size: 100px 100px;
+  /* font-family: "Open Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0; */
+}
+.wrapper
+{
   font-family: "Open Sans", sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
   margin: 0;
+  color:white
 }
-
 .container {
   background-color: rgba(0, 0, 0, 0.8);
   border: 2px solid black;
@@ -43,9 +53,13 @@ background-size: 100px 100px;
 }
 
 .header {
+  position: absolute;
+  top: 0;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.8);
   padding: 20px 40px;
+  width: 100vw;
+  box-shadow: 0 0 100px white;
 }
 h2{
     margin: 0;

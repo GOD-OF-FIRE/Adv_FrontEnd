@@ -1,0 +1,86 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: #168;
+  background-image: url("https://source.unsplash.com/1600x900/?weather");
+  font-family: "Zen Kurenaido", sans-serif;
+  font-size: 130%;
+}
+
+.card {
+  background: #47474770;
+  color: rgb(158, 249, 252);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 0 10px 10px black;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 10px black;
+}
+button {
+  border-radius: 5px;
+  border: none;
+  height: 3.77em;
+  width: 4em;
+  outline: none;
+  background: #fbfbfb;
+  color: grey;
+  cursor: pointer;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+}
+
+input.search-bar {
+  border: none;
+  outline: none;
+  height: 2.32em;
+  text-align: center;
+  border-radius: 7px;
+  background: #fbfbfb;
+  color: rgb(129, 129, 129);
+  font-family: inherit;
+  font-size: 100%;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+button:hover {
+  background: #dea0f7e7;
+  transform: scale(1.1);
+  padding: 0;
+  color: white;
+  border-radius: 5px;
+  transition: all 0.7s ease;
+}
+h1.temp {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+.weather.loading {
+  visibility: hidden;
+  max-height: 20px;
+  position: relative;
+}
+.weather.loading:after {
+  visibility: visible;
+  content: "Fetching Weather Info...";
+  color: red;
+  position: absolute;
+  top: 0;
+  left: 20px;
+}

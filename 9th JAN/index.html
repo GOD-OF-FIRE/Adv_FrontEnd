@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KBC | Kon Banega Crorepati</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .wrapper {
+            display: flex;
+            align-items: flex-end;
+
+            justify-content: center;
+            height: 100vh;
+            width: 100vw;
+            background: rgba(0, 0, 0, 0);
+        }
+
+        .video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            /* bottom: 0; */
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+        }
+
+        button {
+            position: absolute;
+            width: 20vw;
+            height: 10vh;
+            bottom: 15vh;
+            background: linear-gradient(180deg, rgba(102, 51, 153, 0.849), rgb(15, 1, 29));
+            color: white;
+            font-size: 1em;
+            border: 3px solid purple;
+            border-radius: 10px;
+            transition: all 1s ease-in-out;
+            animation: popup 1.5s;
+            cursor: pointer;
+        }
+
+        @keyframes popup {
+            0% {
+                transform: scale(0);
+            }
+
+            50% {
+                transform: scale(1.4);
+            }
+
+            60% {
+                transform: scale(1.1);
+            }
+
+            70% {
+                transform: scale(1.2);
+            }
+
+            80% {
+                transform: scale(1);
+            }
+
+            90% {
+                transform: scale(1.1);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        button:hover {
+            font-size: 1.1em;
+            transform: scale(1.1);
+            letter-spacing: 1vh;
+            transition: all 0.5s ease;
+        }
+    </style>
+</head>
+
+<body>
+    <audio src="intro.mp3" id="autoplay" autoplay loop></audio>
+    <div class="wrapper">
+
+        <video src="intro.mp4" class="video-background" autoplay muted loop></video>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

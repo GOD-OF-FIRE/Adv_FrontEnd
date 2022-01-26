@@ -114,6 +114,3 @@ function closeForm() {
   document.getElementById("myForm").style.display = "none";
 }
 
-// to do:
-// change isRead to true / false
-//
